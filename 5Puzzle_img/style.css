@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+    text-align: center;
+}
+
+.images {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    /* margin-left: 15px; */
+    cursor: move; /* Indicates draggable */
+    padding: .5px;
+    width: 30%;
+    transition: transform 0.3s; /* Optional: for smoother drag effect */
+}
+
+.image.dragging {
+    opacity: 0.5; /* Visual feedback during dragging */
+}
